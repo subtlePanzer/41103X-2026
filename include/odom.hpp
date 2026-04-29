@@ -7,7 +7,7 @@
 #include <memory>
 
 #include "api.h"
-
+#include "constants.hpp"
 #include "vector2.hpp"
 
 /// @brief Odometry using 2 tracking wheels and an IMU
@@ -44,13 +44,21 @@ private:
         static constexpr int odom_y_port = 2;
         static constexpr int imu_port = 3;
 
+        static constexpr float x_wheel_diam_cm = 15;
+        static constexpr float x_wheel_circ_cm = (2 * PI * x_wheel_diam_cm);
+
+        static constexpr float y_wheel_diam_cm = 15;
+        static constexpr float y_wheel_circ_cm = (2 * PI * y_wheel_diam_cm);
+
         static inline std::atomic<float> position_global_x_cm{0.0f};
         static inline std::atomic<float> position_global_y_cm{0.0f};
         static inline std::atomic<float> heading_global_rads{0.0f};
 
         static inline std::atomic<float> x_wheel_angle_cdeg{0.0f};
         static inline std::atomic<float> y_wheel_angle_cdeg{0.0f};
-        static inline std::atomic<float> imu_heading_rate{0.0f};
+        static inline std::atomic<float> last_x_wheel_angle_cdeg{0.0f};
+        static inline std::atomic<float> last_y_wheel_angle_cdeg{0.0f};
+
         static inline std::atomic<float> filtered_imu_heading_deg{0.0f};
 
         static inline Filter imu_filter{HighPass(0.95)}; // TODO: tune filter

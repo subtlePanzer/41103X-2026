@@ -38,7 +38,7 @@ void Odom2WheelIMU::get_sensor_data(void) {
         do {
                 x_wheel_angle_cdeg = hardware.x_wheel->get_position();
                 y_wheel_angle_cdeg = hardware.y_wheel->get_position();
-                imu_heading_rate = (float)hardware.imu->get_gyro_rate().z;
+                float imu_heading_rate = (float)hardware.imu->get_gyro_rate().z;
                 filtered_imu_heading_deg += // account for initial pos ie. calibrate
                         imu_filter.filter(imu_heading_rate) * (1000 / dt);
 
@@ -48,7 +48,27 @@ void Odom2WheelIMU::get_sensor_data(void) {
 
 void Odom2WheelIMU::calc_pos(void) {
         do {
-                // TODO
+                // wheel rotations to distance
+                float dx_wheel_angle_cdeg = position_global_x_cm.load()
+                        - last_x_wheel_angle_cdeg.load();
+                float dy_wheel_angle_cdeg = position_global_y_cm.load()
+                        - last_y_wheel_angle_cdeg.load();
+
+                float dx_wheel_cm = 1000 * dx_wheel_angle_cdeg
+                        * x_wheel_circ_cm;
+                float dy_wheel_cm = 1000 * dy_wheel_angle_cdeg
+                        * y_wheel_circ_cm;
+
+                // rotate by heading
+                float theta_rads = filtered_imu_heading_deg.load() * DEG2RAD;
+                float cos_t = cos(theta_rads);
+                float sin_t = sin(theta_rads);
+                float rot_dx = dx_wheel_cm * cos_t - dy_wheel_cm * sin_t;
+                float rot_dy = dx_wheel_cm * sin_t - dy_wheel_cm * cos_t;
+
+                // add to last known position
+                // TODO:
+                
                 pros::delay(10);
         } while (true);
 }
