@@ -3,6 +3,31 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+
+## DOXYGEN
+html/
+latex/
+
+## PROS
+# Compiled Object files
+*.o
+*.obj
+
+# Executables
+*.bin
+*.elf
+
+# PROS
+bin/
+.vscode/
+.cache/
+compile_commands.json
+temp.log
+temp.errors
+*.ini
+.d/
+
+## GITHUB AUTO GENERATED
 # User-specific files
 *.rsuser
 *.suo
@@ -427,21 +452,3 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
-
-# Compiled Object files
-*.o
-*.obj
-
-# Executables
-*.bin
-*.elf
-
-# PROS
-bin/
-.vscode/
-.cache/
-compile_commands.json
-temp.log
-temp.errors
-*.ini
-.d/

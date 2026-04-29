@@ -3,7 +3,7 @@
 #include "odom.hpp"
 
 void initialize(void) {
-        init_odom();
+        Odom2WheelIMU::init_odom();
 }
 
 void disabled(void) {}
