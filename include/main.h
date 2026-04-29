@@ -1,3 +1,5 @@
+/// @file
+/// @brief Main file.
 #ifndef _PROS_MAIN_H_
 #define _PROS_MAIN_H_
 

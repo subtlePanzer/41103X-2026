@@ -1,3 +1,5 @@
+/// @file
+/// @brief Main file.
 #include "main.h"
 
 #include "odom.hpp"
