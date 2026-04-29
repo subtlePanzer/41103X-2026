@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$class_filter.html" title="Pure virtual class for different types of data filters." alt="" coords="5,5,56,32"/>
+<area shape="rect" id="Node000001" href="$class_high_pass.html" title="Simple high&#45;pass filter that removes low&#45;band signals." alt="" coords="104,5,182,32"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="71,16,103,16,103,21,71,21"/>
+</map>

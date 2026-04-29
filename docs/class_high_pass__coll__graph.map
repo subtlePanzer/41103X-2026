@@ -1,0 +1,7 @@
+<map id="HighPass" name="HighPass">
+<area shape="rect" id="Node000001" title="Simple high&#45;pass filter that removes low&#45;band signals." alt="" coords="19,436,108,527"/>
+<area shape="rect" id="Node000002" href="$class_filter.html" title="Pure virtual class for different types of data filters." alt="" coords="33,296,94,387"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,402,66,436,60,436,60,402"/>
+<area shape="rect" id="Node000003" href="$structring__buffer.html" title=" " alt="" coords="5,5,121,203"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="66,202,66,279,60,279,60,202"/>
+</map>
