@@ -1,4 +1,5 @@
 /// @file
+/// @brief 2-dimensional vector datatypes.
 #include "vector2.hpp"
 
 ivector2::ivector2(int x, int y) : x(x), y(y) {}
