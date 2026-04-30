@@ -12,11 +12,11 @@ public:
         /// @brief Filter the data.
         /// @param raw The unfiltered data.
         /// @return The filtered data.
-        virtual float filter(float raw);
+        virtual float filter(float raw) = 0;
 
 protected:
-        ring_buffer<128> buffer_raw;
-        ring_buffer<128> buffer_filtered;
+        ring_buffer<float, 128> buffer_raw;
+        ring_buffer<float, 128> buffer_filtered;
 };
 
 /// @brief Simple high-pass filter that removes low-band signals.

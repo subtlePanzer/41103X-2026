@@ -40,7 +40,7 @@ void Odom2WheelIMU::get_sensor_data(void) {
                 y_wheel_angle_cdeg = hardware.y_wheel->get_position();
                 float imu_heading_rate = (float)hardware.imu->get_gyro_rate().z;
                 filtered_imu_heading_deg += // account for initial pos ie. calibrate
-                        imu_filter.filter(imu_heading_rate) * (1000 / dt);
+                        imu_filter->filter(imu_heading_rate) * (1000 / dt);
 
                 pros::delay(dt);
         } while (true);
@@ -68,7 +68,7 @@ void Odom2WheelIMU::calc_pos(void) {
 
                 // add to last known position
                 // TODO:
-                
+
                 pros::delay(10);
         } while (true);
 }

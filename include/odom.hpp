@@ -3,11 +3,11 @@
 #pragma once
 
 #include <atomic>
-#include <filters.hpp>
 #include <memory>
 
 #include "api.h"
 #include "constants.hpp"
+#include "filters.hpp"
 #include "vector2.hpp"
 
 /// @brief Odometry using 2 tracking wheels and an IMU
@@ -61,7 +61,7 @@ private:
 
         static inline std::atomic<float> filtered_imu_heading_deg{0.0f};
 
-        static inline Filter imu_filter{HighPass(0.95)}; // TODO: tune filter
+        static inline Filter* imu_filter{new HighPass(0.95)}; // TODO: tune filter
 
         /// @internal Used to avoid returning bad data if the calculation 
         /// thread has not been run yet.

@@ -6,11 +6,11 @@
 
 /// @brief A optimised FIFO queue implemented using a ring-buffer.
 /// @tparam size The size of the buffer, must be a power of 2.
-template <size_t size = 128>
+template<typename T, size_t size = 128>
 struct ring_buffer {
-        static_assert(size& (size - 1) == 0, "Size must be a power of 2.");
+        static_assert((size & (size - 1)) == 0, "Size must be a power of 2.");
 public:
-        std::array<float, Size> buffer;
+        std::array<T, size> buffer;
         size_t head = 0;
         size_t tail = 0;
         const size_t mask = size - 1;
@@ -18,7 +18,7 @@ public:
         /// @brief Push to the buffer.
         /// @param value The value to push to the buffer.
         /// @internal Uses a trick that requires an array size of base-2.
-        void push(float value) {
+        void push(T value) {
                 buffer[head] = value;
                 head = (head + 1) & mask; // this trick is faster but only works
                 // with powers of 2
@@ -29,16 +29,16 @@ public:
         /// @brief View the top item on the buffer.
         /// @return Zero if the array is empty, otherwise the most recent item
         /// on the buffer.
-        float peek_last(void) {
-                if (is_empty()) return 0.0f;
+        T peek_last(void) {
+                if (is_empty()) return T();
                 return buffer[head];
         }
 
         /// @brief Pop the oldest value added to the buffer.
         /// @return Zero if the array is empty, otherwise the oldest item in the
         /// array.
-        float pop(void) {
-                if (is_empty()) return 0.0f; // TODO: Proper error handling
+        T pop(void) {
+                if (is_empty()) return T(); // TODO: Proper error handling
 
                 float value = buffer[tail];
                 tail = (tail + 1) & mask;
