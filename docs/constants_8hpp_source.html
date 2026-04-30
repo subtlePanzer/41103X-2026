@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ASDF-27: Class Members - Functions</title>
+<title>ASDF-27: include/constants.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('functions_func.html','',''); });
+$(function(){initNavTree('constants_8hpp_source.html','',''); });
 </script>
 <div id="container">
 <div id="doc-content">
@@ -88,28 +88,28 @@ $(function(){initNavTree('functions_func.html','',''); });
 </div>
 </div>
 
+<div class="header">
+  <div class="headertitle"><div class="title">constants.hpp</div></div>
+</div><!--header-->
 <div class="contents">
-<div class="textblock">Here is a list of all documented functions with links to the class documentation for each member:</div><ul>
-<li>calc_pos()&#160;:&#160;<a class="el" href="class_odom2_wheel_i_m_u.html#a4d20190ada91cacb48ed580247c12736">Odom2WheelIMU</a></li>
-<li>filter()&#160;:&#160;<a class="el" href="class_filter.html#a0a0f0ec882be49dc637142683858386c">Filter</a>, <a class="el" href="class_high_pass.html#afffd8833c60e406f13593affcc098f3c">HighPass</a></li>
-<li>get_hardware_ptr()&#160;:&#160;<a class="el" href="class_odom2_wheel_i_m_u.html#a1ea1c1bb6ea7474f679aa29162c5e6ad">Odom2WheelIMU</a></li>
-<li>get_heading()&#160;:&#160;<a class="el" href="class_odom2_wheel_i_m_u.html#a189a8ec3deaaba4af61361044aad8063">Odom2WheelIMU</a></li>
-<li>get_position()&#160;:&#160;<a class="el" href="class_odom2_wheel_i_m_u.html#a1bf74fee0c995f7e39372ce4f3bf69ec">Odom2WheelIMU</a></li>
-<li>get_sensor_data()&#160;:&#160;<a class="el" href="class_odom2_wheel_i_m_u.html#a8a2fab10cffc7e01adc09869ca56c7fe">Odom2WheelIMU</a></li>
-<li>HighPass()&#160;:&#160;<a class="el" href="class_high_pass.html#ae8388bb1bd825b538bf4b9eb0c4791e9">HighPass</a></li>
-<li>init_odom()&#160;:&#160;<a class="el" href="class_odom2_wheel_i_m_u.html#a0bafe3db1d5ad82920464e724c75c8e6">Odom2WheelIMU</a></li>
-<li>is_empty()&#160;:&#160;<a class="el" href="structring__buffer.html#a8ffff200d48ac42db42f56b446ee673d">ring_buffer&lt; T, size &gt;</a></li>
-<li>ivector2()&#160;:&#160;<a class="el" href="structivector2.html#a7c1dffa2208dd8ebd98bab615b0d89ca">ivector2</a></li>
-<li>peek_last()&#160;:&#160;<a class="el" href="structring__buffer.html#a7425588e83b1d25987bb92113c7cf06e">ring_buffer&lt; T, size &gt;</a></li>
-<li>pop()&#160;:&#160;<a class="el" href="structring__buffer.html#a181ee90be69e0af96e4a3133ce7b2a4f">ring_buffer&lt; T, size &gt;</a></li>
-<li>push()&#160;:&#160;<a class="el" href="structring__buffer.html#a5be4e68eaf64023a73dd9e349167fb14">ring_buffer&lt; T, size &gt;</a></li>
-</ul>
-</div><!-- contents -->
+<a href="constants_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">constexpr</span> <span class="keywordtype">double</span> PI = 3.14f;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">constexpr</span> <span class="keywordtype">double</span> TAU = 2 * PI;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">constexpr</span> <span class="keywordtype">double</span> DEG2RAD = PI / 180;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">constexpr</span> <span class="keywordtype">double</span> RAD2DEG = 180 / PI;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">constexpr</span> <span class="keywordtype">double</span> IN2MM = 2.54;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">constexpr</span> <span class="keywordtype">double</span> MM2IN = 1 / IN2MM;</div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a href="constants_8hpp.html">constants.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

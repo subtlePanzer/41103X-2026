@@ -102,13 +102,13 @@ Collaboration diagram for Odom2WheelIMU:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_odom2_wheel_i_m_u__coll__graph.png" border="0" usemap="#a_odom2_wheel_i_m_u_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="a_odom2_wheel_i_m_u_coll__map" id="a_odom2_wheel_i_m_u_coll__map">
-<area shape="rect" title="Odometry using 2 tracking wheels and an IMU." alt="" coords="71,240,196,267"/>
-<area shape="rect" href="class_filter.html" title="Pure virtual class for different types of data filters." alt="" coords="43,133,94,160"/>
-<area shape="poly" title=" " alt="" coords="86,172,112,215,128,238,123,241,108,217,82,175"/>
-<area shape="rect" href="structring__buffer.html" title=" " alt="" coords="5,5,132,32"/>
-<area shape="poly" title=" " alt="" coords="71,47,71,133,66,133,66,47"/>
-<area shape="rect" href="struct_odom2_wheel_i_m_u_1_1odom__hardware__struct.html" title="Struct for managing odom&#45;related hardware." alt="" coords="118,125,283,168"/>
-<area shape="poly" title=" " alt="" coords="191,183,173,218,151,241,147,238,169,214,187,181"/>
+<area shape="rect" title="Odometry using 2 tracking wheels and an IMU." alt="" coords="69,256,194,283"/>
+<area shape="rect" href="class_filter.html" title="Pure virtual class for different types of data filters." alt="" coords="41,149,92,176"/>
+<area shape="poly" title=" " alt="" coords="84,188,110,231,126,254,121,257,106,233,80,191"/>
+<area shape="rect" href="structring__buffer.html" title=" " alt="" coords="5,5,128,48"/>
+<area shape="poly" title=" " alt="" coords="69,64,69,149,64,149,64,64"/>
+<area shape="rect" href="struct_odom2_wheel_i_m_u_1_1odom__hardware__struct.html" title="Struct for managing odom&#45;related hardware." alt="" coords="116,141,281,184"/>
+<area shape="poly" title=" " alt="" coords="189,199,171,234,149,257,145,254,167,230,185,197"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -152,6 +152,14 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>odom_
 static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>odom_y_port</b> = 2</td></tr>
 <tr class="memitem:a330f3dc19b4f560e8e90b8689ce07ece" id="r_a330f3dc19b4f560e8e90b8689ce07ece"><td class="memItemLeft" align="right" valign="top"><a id="a330f3dc19b4f560e8e90b8689ce07ece" name="a330f3dc19b4f560e8e90b8689ce07ece"></a>
 static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>imu_port</b> = 3</td></tr>
+<tr class="memitem:ab8d2106227dd8ea27564ad006231084b" id="r_ab8d2106227dd8ea27564ad006231084b"><td class="memItemLeft" align="right" valign="top"><a id="ab8d2106227dd8ea27564ad006231084b" name="ab8d2106227dd8ea27564ad006231084b"></a>
+static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>x_wheel_diam_cm</b> = 15</td></tr>
+<tr class="memitem:a50daaaea51b03372435a81311cf568d6" id="r_a50daaaea51b03372435a81311cf568d6"><td class="memItemLeft" align="right" valign="top"><a id="a50daaaea51b03372435a81311cf568d6" name="a50daaaea51b03372435a81311cf568d6"></a>
+static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>x_wheel_circ_cm</b> = (2 * PI * x_wheel_diam_cm)</td></tr>
+<tr class="memitem:a0eac517855ebd9558679b20978f9c760" id="r_a0eac517855ebd9558679b20978f9c760"><td class="memItemLeft" align="right" valign="top"><a id="a0eac517855ebd9558679b20978f9c760" name="a0eac517855ebd9558679b20978f9c760"></a>
+static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>y_wheel_diam_cm</b> = 15</td></tr>
+<tr class="memitem:a53684d19839523c5cad7de27cf0f3e95" id="r_a53684d19839523c5cad7de27cf0f3e95"><td class="memItemLeft" align="right" valign="top"><a id="a53684d19839523c5cad7de27cf0f3e95" name="a53684d19839523c5cad7de27cf0f3e95"></a>
+static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>y_wheel_circ_cm</b> = (2 * PI * y_wheel_diam_cm)</td></tr>
 <tr class="memitem:a3f92383d1d291d6f1646c849ee86bb13" id="r_a3f92383d1d291d6f1646c849ee86bb13"><td class="memItemLeft" align="right" valign="top"><a id="a3f92383d1d291d6f1646c849ee86bb13" name="a3f92383d1d291d6f1646c849ee86bb13"></a>
 static std::atomic&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>position_global_x_cm</b> {0.0f}</td></tr>
 <tr class="memitem:a0962a3a4461747eb834bc4d0fd266c7e" id="r_a0962a3a4461747eb834bc4d0fd266c7e"><td class="memItemLeft" align="right" valign="top"><a id="a0962a3a4461747eb834bc4d0fd266c7e" name="a0962a3a4461747eb834bc4d0fd266c7e"></a>
@@ -162,12 +170,14 @@ static std::atomic&lt; float &gt;&#160;</td><td class="memItemRight" valign="bot
 static std::atomic&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>x_wheel_angle_cdeg</b> {0.0f}</td></tr>
 <tr class="memitem:af4c7bf9a207caa4b75d34100e8f7dc75" id="r_af4c7bf9a207caa4b75d34100e8f7dc75"><td class="memItemLeft" align="right" valign="top"><a id="af4c7bf9a207caa4b75d34100e8f7dc75" name="af4c7bf9a207caa4b75d34100e8f7dc75"></a>
 static std::atomic&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>y_wheel_angle_cdeg</b> {0.0f}</td></tr>
-<tr class="memitem:a5c36170fa87ae23fc453e5d23eb466c7" id="r_a5c36170fa87ae23fc453e5d23eb466c7"><td class="memItemLeft" align="right" valign="top"><a id="a5c36170fa87ae23fc453e5d23eb466c7" name="a5c36170fa87ae23fc453e5d23eb466c7"></a>
-static std::atomic&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>imu_heading_rate</b> {0.0f}</td></tr>
+<tr class="memitem:acd6f7b3fe29ca97c94fcd4fab05783af" id="r_acd6f7b3fe29ca97c94fcd4fab05783af"><td class="memItemLeft" align="right" valign="top"><a id="acd6f7b3fe29ca97c94fcd4fab05783af" name="acd6f7b3fe29ca97c94fcd4fab05783af"></a>
+static std::atomic&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>last_x_wheel_angle_cdeg</b> {0.0f}</td></tr>
+<tr class="memitem:a1458de0677408519ede523c933f5c445" id="r_a1458de0677408519ede523c933f5c445"><td class="memItemLeft" align="right" valign="top"><a id="a1458de0677408519ede523c933f5c445" name="a1458de0677408519ede523c933f5c445"></a>
+static std::atomic&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>last_y_wheel_angle_cdeg</b> {0.0f}</td></tr>
 <tr class="memitem:a5d823595c5053c88f1339904d22446e4" id="r_a5d823595c5053c88f1339904d22446e4"><td class="memItemLeft" align="right" valign="top"><a id="a5d823595c5053c88f1339904d22446e4" name="a5d823595c5053c88f1339904d22446e4"></a>
 static std::atomic&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>filtered_imu_heading_deg</b> {0.0f}</td></tr>
-<tr class="memitem:a10db37a0531284f4fff87ce6fc2ed6d1" id="r_a10db37a0531284f4fff87ce6fc2ed6d1"><td class="memItemLeft" align="right" valign="top"><a id="a10db37a0531284f4fff87ce6fc2ed6d1" name="a10db37a0531284f4fff87ce6fc2ed6d1"></a>
-static <a class="el" href="class_filter.html">Filter</a>&#160;</td><td class="memItemRight" valign="bottom"><b>imu_filter</b> {<a class="el" href="class_high_pass.html">HighPass</a>(0.95)}</td></tr>
+<tr class="memitem:a12c7615b95e125e770f3ebb7e71d1037" id="r_a12c7615b95e125e770f3ebb7e71d1037"><td class="memItemLeft" align="right" valign="top"><a id="a12c7615b95e125e770f3ebb7e71d1037" name="a12c7615b95e125e770f3ebb7e71d1037"></a>
+static <a class="el" href="class_filter.html">Filter</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>imu_filter</b> {new <a class="el" href="class_high_pass.html">HighPass</a>(0.95)}</td></tr>
 <tr class="memitem:af1eeb44604fa1ab82b0c1edd0375fa88" id="r_af1eeb44604fa1ab82b0c1edd0375fa88"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1eeb44604fa1ab82b0c1edd0375fa88">initialised</a> = false</td></tr>
 <tr class="memitem:adddd64dca5583cf1d7fe821192ad64d7" id="r_adddd64dca5583cf1d7fe821192ad64d7"><td class="memItemLeft" align="right" valign="top"><a id="adddd64dca5583cf1d7fe821192ad64d7" name="adddd64dca5583cf1d7fe821192ad64d7"></a>
 static <a class="el" href="struct_odom2_wheel_i_m_u_1_1odom__hardware__struct.html">odom_hardware_struct</a>&#160;</td><td class="memItemRight" valign="bottom"><b>hardware</b></td></tr>

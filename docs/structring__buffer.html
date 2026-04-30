@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ASDF-27: ring_buffer&lt; size &gt; Struct Template Reference</title>
+<title>ASDF-27: ring_buffer&lt; T, size &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -89,7 +89,7 @@ $(function(){initNavTree('structring__buffer.html','','structring__buffer-member
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">ring_buffer&lt; size &gt; Struct Template Reference</div></div>
+  <div class="headertitle"><div class="title">ring_buffer&lt; T, size &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -100,29 +100,29 @@ $(function(){initNavTree('structring__buffer.html','','structring__buffer-member
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9f95f7d97da30e46872bc3bab30ca229" id="r_a9f95f7d97da30e46872bc3bab30ca229"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f95f7d97da30e46872bc3bab30ca229">push</a> (float value)</td></tr>
-<tr class="memdesc:a9f95f7d97da30e46872bc3bab30ca229"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push to the buffer.  <br /></td></tr>
-<tr class="memitem:a2f31f86637335b59fdc94157b956f768" id="r_a2f31f86637335b59fdc94157b956f768"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f31f86637335b59fdc94157b956f768">peek_last</a> (void)</td></tr>
-<tr class="memdesc:a2f31f86637335b59fdc94157b956f768"><td class="mdescLeft">&#160;</td><td class="mdescRight">View the top item on the buffer.  <br /></td></tr>
-<tr class="memitem:a6ba70ebf90dfb75ddc57a4ab15a23f89" id="r_a6ba70ebf90dfb75ddc57a4ab15a23f89"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ba70ebf90dfb75ddc57a4ab15a23f89">pop</a> (void)</td></tr>
-<tr class="memdesc:a6ba70ebf90dfb75ddc57a4ab15a23f89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pop the oldest value added to the buffer.  <br /></td></tr>
-<tr class="memitem:aabe0115c17dd13a140cda4295f5083f6" id="r_aabe0115c17dd13a140cda4295f5083f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabe0115c17dd13a140cda4295f5083f6">is_empty</a> () const</td></tr>
-<tr class="memdesc:aabe0115c17dd13a140cda4295f5083f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">4th wall breaking joke here.  <br /></td></tr>
+<tr class="memitem:a5be4e68eaf64023a73dd9e349167fb14" id="r_a5be4e68eaf64023a73dd9e349167fb14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5be4e68eaf64023a73dd9e349167fb14">push</a> (T value)</td></tr>
+<tr class="memdesc:a5be4e68eaf64023a73dd9e349167fb14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push to the buffer.  <br /></td></tr>
+<tr class="memitem:a7425588e83b1d25987bb92113c7cf06e" id="r_a7425588e83b1d25987bb92113c7cf06e"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7425588e83b1d25987bb92113c7cf06e">peek_last</a> (void)</td></tr>
+<tr class="memdesc:a7425588e83b1d25987bb92113c7cf06e"><td class="mdescLeft">&#160;</td><td class="mdescRight">View the top item on the buffer.  <br /></td></tr>
+<tr class="memitem:a181ee90be69e0af96e4a3133ce7b2a4f" id="r_a181ee90be69e0af96e4a3133ce7b2a4f"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a181ee90be69e0af96e4a3133ce7b2a4f">pop</a> (void)</td></tr>
+<tr class="memdesc:a181ee90be69e0af96e4a3133ce7b2a4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pop the oldest value added to the buffer.  <br /></td></tr>
+<tr class="memitem:a8ffff200d48ac42db42f56b446ee673d" id="r_a8ffff200d48ac42db42f56b446ee673d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ffff200d48ac42db42f56b446ee673d">is_empty</a> () const</td></tr>
+<tr class="memdesc:a8ffff200d48ac42db42f56b446ee673d"><td class="mdescLeft">&#160;</td><td class="mdescRight">4th wall breaking joke here.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a5e2ad9fe313816d439de73691164d308" id="r_a5e2ad9fe313816d439de73691164d308"><td class="memItemLeft" align="right" valign="top"><a id="a5e2ad9fe313816d439de73691164d308" name="a5e2ad9fe313816d439de73691164d308"></a>
-std::array&lt; float, Size &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>buffer</b></td></tr>
-<tr class="memitem:ae199879b890120f74e49327c465c9863" id="r_ae199879b890120f74e49327c465c9863"><td class="memItemLeft" align="right" valign="top"><a id="ae199879b890120f74e49327c465c9863" name="ae199879b890120f74e49327c465c9863"></a>
+<tr class="memitem:a994b8e56fda60f0ba33cdb7ff2d6679e" id="r_a994b8e56fda60f0ba33cdb7ff2d6679e"><td class="memItemLeft" align="right" valign="top"><a id="a994b8e56fda60f0ba33cdb7ff2d6679e" name="a994b8e56fda60f0ba33cdb7ff2d6679e"></a>
+std::array&lt; T, size &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>buffer</b></td></tr>
+<tr class="memitem:a0f33028a3816ba7000731a41b5844a55" id="r_a0f33028a3816ba7000731a41b5844a55"><td class="memItemLeft" align="right" valign="top"><a id="a0f33028a3816ba7000731a41b5844a55" name="a0f33028a3816ba7000731a41b5844a55"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>head</b> = 0</td></tr>
-<tr class="memitem:af1d29ae9313468ac9b038631752ad418" id="r_af1d29ae9313468ac9b038631752ad418"><td class="memItemLeft" align="right" valign="top"><a id="af1d29ae9313468ac9b038631752ad418" name="af1d29ae9313468ac9b038631752ad418"></a>
+<tr class="memitem:aea354d7e00be0e0d13ac5d31837a552b" id="r_aea354d7e00be0e0d13ac5d31837a552b"><td class="memItemLeft" align="right" valign="top"><a id="aea354d7e00be0e0d13ac5d31837a552b" name="aea354d7e00be0e0d13ac5d31837a552b"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>tail</b> = 0</td></tr>
-<tr class="memitem:a50d10cd293584555990a2ebd1e9e313f" id="r_a50d10cd293584555990a2ebd1e9e313f"><td class="memItemLeft" align="right" valign="top"><a id="a50d10cd293584555990a2ebd1e9e313f" name="a50d10cd293584555990a2ebd1e9e313f"></a>
+<tr class="memitem:a3ec9e3a93de8d4ecd591b5a99c422655" id="r_a3ec9e3a93de8d4ecd591b5a99c422655"><td class="memItemLeft" align="right" valign="top"><a id="a3ec9e3a93de8d4ecd591b5a99c422655" name="a3ec9e3a93de8d4ecd591b5a99c422655"></a>
 const size_t&#160;</td><td class="memItemRight" valign="bottom"><b>mask</b> = size - 1</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;size_t size = 128&gt;<br />
-struct ring_buffer&lt; size &gt;</div><p>A optimised FIFO queue implemented using a ring-buffer. </p>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename T, size_t size = 128&gt;<br />
+struct ring_buffer&lt; T, size &gt;</div><p>A optimised FIFO queue implemented using a ring-buffer. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">size</td><td>The size of the buffer, must be a power of 2. </td></tr>
@@ -130,19 +130,19 @@ struct ring_buffer&lt; size &gt;</div><p>A optimised FIFO queue implemented usin
   </dd>
 </dl>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="aabe0115c17dd13a140cda4295f5083f6" name="aabe0115c17dd13a140cda4295f5083f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabe0115c17dd13a140cda4295f5083f6">&#9670;&#160;</a></span>is_empty()</h2>
+<a id="a8ffff200d48ac42db42f56b446ee673d" name="a8ffff200d48ac42db42f56b446ee673d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ffff200d48ac42db42f56b446ee673d">&#9670;&#160;</a></span>is_empty()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;size_t size = 128&gt; </div>
+template&lt;typename T, size_t size = 128&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="structring__buffer.html">ring_buffer</a>&lt; size &gt;::is_empty </td>
+          <td class="memname">bool <a class="el" href="structring__buffer.html">ring_buffer</a>&lt; T, size &gt;::is_empty </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -160,19 +160,19 @@ template&lt;size_t size = 128&gt; </div>
 
 </div>
 </div>
-<a id="a2f31f86637335b59fdc94157b956f768" name="a2f31f86637335b59fdc94157b956f768"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f31f86637335b59fdc94157b956f768">&#9670;&#160;</a></span>peek_last()</h2>
+<a id="a7425588e83b1d25987bb92113c7cf06e" name="a7425588e83b1d25987bb92113c7cf06e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7425588e83b1d25987bb92113c7cf06e">&#9670;&#160;</a></span>peek_last()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;size_t size = 128&gt; </div>
+template&lt;typename T, size_t size = 128&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float <a class="el" href="structring__buffer.html">ring_buffer</a>&lt; size &gt;::peek_last </td>
+          <td class="memname">T <a class="el" href="structring__buffer.html">ring_buffer</a>&lt; T, size &gt;::peek_last </td>
           <td>(</td>
           <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -190,19 +190,19 @@ template&lt;size_t size = 128&gt; </div>
 
 </div>
 </div>
-<a id="a6ba70ebf90dfb75ddc57a4ab15a23f89" name="a6ba70ebf90dfb75ddc57a4ab15a23f89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ba70ebf90dfb75ddc57a4ab15a23f89">&#9670;&#160;</a></span>pop()</h2>
+<a id="a181ee90be69e0af96e4a3133ce7b2a4f" name="a181ee90be69e0af96e4a3133ce7b2a4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a181ee90be69e0af96e4a3133ce7b2a4f">&#9670;&#160;</a></span>pop()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;size_t size = 128&gt; </div>
+template&lt;typename T, size_t size = 128&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float <a class="el" href="structring__buffer.html">ring_buffer</a>&lt; size &gt;::pop </td>
+          <td class="memname">T <a class="el" href="structring__buffer.html">ring_buffer</a>&lt; T, size &gt;::pop </td>
           <td>(</td>
           <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -220,21 +220,21 @@ template&lt;size_t size = 128&gt; </div>
 
 </div>
 </div>
-<a id="a9f95f7d97da30e46872bc3bab30ca229" name="a9f95f7d97da30e46872bc3bab30ca229"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f95f7d97da30e46872bc3bab30ca229">&#9670;&#160;</a></span>push()</h2>
+<a id="a5be4e68eaf64023a73dd9e349167fb14" name="a5be4e68eaf64023a73dd9e349167fb14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5be4e68eaf64023a73dd9e349167fb14">&#9670;&#160;</a></span>push()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;size_t size = 128&gt; </div>
+template&lt;typename T, size_t size = 128&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="structring__buffer.html">ring_buffer</a>&lt; size &gt;::push </td>
+          <td class="memname">void <a class="el" href="structring__buffer.html">ring_buffer</a>&lt; T, size &gt;::push </td>
           <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>

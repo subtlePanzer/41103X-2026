@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['peek_5flast_0',['peek_last',['../structring__buffer.html#a2f31f86637335b59fdc94157b956f768',1,'ring_buffer']]],
-  ['pop_1',['pop',['../structring__buffer.html#a6ba70ebf90dfb75ddc57a4ab15a23f89',1,'ring_buffer']]],
-  ['push_2',['push',['../structring__buffer.html#a9f95f7d97da30e46872bc3bab30ca229',1,'ring_buffer']]]
+  ['peek_5flast_0',['peek_last',['../structring__buffer.html#a7425588e83b1d25987bb92113c7cf06e',1,'ring_buffer']]],
+  ['pop_1',['pop',['../structring__buffer.html#a181ee90be69e0af96e4a3133ce7b2a4f',1,'ring_buffer']]],
+  ['push_2',['push',['../structring__buffer.html#a5be4e68eaf64023a73dd9e349167fb14',1,'ring_buffer']]]
 ];

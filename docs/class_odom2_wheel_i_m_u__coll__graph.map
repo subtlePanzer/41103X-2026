@@ -1,9 +1,9 @@
 <map id="Odom2WheelIMU" name="Odom2WheelIMU">
-<area shape="rect" id="Node000001" title="Odometry using 2 tracking wheels and an IMU." alt="" coords="71,240,196,267"/>
-<area shape="rect" id="Node000002" href="$class_filter.html" title="Pure virtual class for different types of data filters." alt="" coords="43,133,94,160"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,172,112,215,128,238,123,241,108,217,82,175"/>
-<area shape="rect" id="Node000003" href="$structring__buffer.html" title=" " alt="" coords="5,5,132,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="71,47,71,133,66,133,66,47"/>
-<area shape="rect" id="Node000004" href="$struct_odom2_wheel_i_m_u_1_1odom__hardware__struct.html" title="Struct for managing odom&#45;related hardware." alt="" coords="118,125,283,168"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="191,183,173,218,151,241,147,238,169,214,187,181"/>
+<area shape="rect" id="Node000001" title="Odometry using 2 tracking wheels and an IMU." alt="" coords="69,256,194,283"/>
+<area shape="rect" id="Node000002" href="$class_filter.html" title="Pure virtual class for different types of data filters." alt="" coords="41,149,92,176"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,188,110,231,126,254,121,257,106,233,80,191"/>
+<area shape="rect" id="Node000003" href="$structring__buffer.html" title=" " alt="" coords="5,5,128,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="69,64,69,149,64,149,64,64"/>
+<area shape="rect" id="Node000004" href="$struct_odom2_wheel_i_m_u_1_1odom__hardware__struct.html" title="Struct for managing odom&#45;related hardware." alt="" coords="116,141,281,184"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="189,199,171,234,149,257,145,254,167,230,185,197"/>
 </map>

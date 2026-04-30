@@ -8,5 +8,5 @@ var hierarchy =
     [ "ivector2", "structivector2.html", null ],
     [ "Odom2WheelIMU", "class_odom2_wheel_i_m_u.html", null ],
     [ "Odom2WheelIMU::odom_hardware_struct", "struct_odom2_wheel_i_m_u_1_1odom__hardware__struct.html", null ],
-    [ "ring_buffer< size >", "structring__buffer.html", null ]
+    [ "ring_buffer< T, size >", "structring__buffer.html", null ]
 ];

@@ -112,11 +112,11 @@ Collaboration diagram for HighPass:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_high_pass__coll__graph.png" border="0" usemap="#a_high_pass_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="a_high_pass_coll__map" id="a_high_pass_coll__map">
-<area shape="rect" title="Simple high&#45;pass filter that removes low&#45;band signals." alt="" coords="29,201,108,228"/>
-<area shape="rect" href="class_filter.html" title="Pure virtual class for different types of data filters." alt="" coords="43,125,94,152"/>
-<area shape="poly" title=" " alt="" coords="71,167,71,201,66,201,66,167"/>
-<area shape="rect" href="structring__buffer.html" title=" " alt="" coords="5,5,132,32"/>
-<area shape="poly" title=" " alt="" coords="71,48,71,125,66,125,66,48"/>
+<area shape="rect" title="Simple high&#45;pass filter that removes low&#45;band signals." alt="" coords="27,217,106,244"/>
+<area shape="rect" href="class_filter.html" title="Pure virtual class for different types of data filters." alt="" coords="41,141,92,168"/>
+<area shape="poly" title=" " alt="" coords="69,183,69,217,64,217,64,183"/>
+<area shape="rect" href="structring__buffer.html" title=" " alt="" coords="5,5,128,48"/>
+<area shape="poly" title=" " alt="" coords="69,63,69,141,64,141,64,63"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -135,10 +135,10 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>alpha</b></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_filter"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_filter')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected Attributes inherited from <a class="el" href="class_filter.html">Filter</a></td></tr>
-<tr class="memitem:a8728af6ca606f05f97079d2dd8f29d2c inherit pro_attribs_class_filter" id="r_a8728af6ca606f05f97079d2dd8f29d2c"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="structring__buffer.html">ring_buffer</a>&lt; 128 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>buffer_raw</b></td></tr>
-<tr class="memitem:a1564e61c2bd91ba2bc5a58848fbfe485 inherit pro_attribs_class_filter" id="r_a1564e61c2bd91ba2bc5a58848fbfe485"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="structring__buffer.html">ring_buffer</a>&lt; 128 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>buffer_filtered</b></td></tr>
+<tr class="memitem:a7b888b4e63e8ee37c6597d4b6ce8ffde inherit pro_attribs_class_filter" id="r_a7b888b4e63e8ee37c6597d4b6ce8ffde"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="structring__buffer.html">ring_buffer</a>&lt; float, 128 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>buffer_raw</b></td></tr>
+<tr class="memitem:add24a2db76989b142d63920389094a66 inherit pro_attribs_class_filter" id="r_add24a2db76989b142d63920389094a66"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="structring__buffer.html">ring_buffer</a>&lt; float, 128 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>buffer_filtered</b></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Simple high-pass filter that removes low-band signals. </p>
@@ -201,7 +201,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The filtered data. </dd></dl>
 
-<p>Reimplemented from <a class="el" href="class_filter.html#af3e525d6750569debcaba929bb233cb7">Filter</a>.</p>
+<p>Implements <a class="el" href="class_filter.html#a0a0f0ec882be49dc637142683858386c">Filter</a>.</p>
 
 </div>
 </div>

@@ -89,7 +89,7 @@ $(function(){initNavTree('class_filter.html','','class_filter-members'); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Filter Class Reference</div></div>
+  <div class="headertitle"><div class="title">Filter Class Reference<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -112,29 +112,29 @@ Collaboration diagram for Filter:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_filter__coll__graph.png" border="0" usemap="#a_filter_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="a_filter_coll__map" id="a_filter_coll__map">
-<area shape="rect" title="Pure virtual class for different types of data filters." alt="" coords="43,125,94,152"/>
-<area shape="rect" href="structring__buffer.html" title=" " alt="" coords="5,5,132,32"/>
-<area shape="poly" title=" " alt="" coords="71,48,71,125,66,125,66,48"/>
+<area shape="rect" title="Pure virtual class for different types of data filters." alt="" coords="41,141,92,168"/>
+<area shape="rect" href="structring__buffer.html" title=" " alt="" coords="5,5,128,48"/>
+<area shape="poly" title=" " alt="" coords="69,63,69,141,64,141,64,63"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af3e525d6750569debcaba929bb233cb7" id="r_af3e525d6750569debcaba929bb233cb7"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3e525d6750569debcaba929bb233cb7">filter</a> (float raw)</td></tr>
-<tr class="memdesc:af3e525d6750569debcaba929bb233cb7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_filter.html" title="Pure virtual class for different types of data filters.">Filter</a> the data.  <br /></td></tr>
+<tr class="memitem:a0a0f0ec882be49dc637142683858386c" id="r_a0a0f0ec882be49dc637142683858386c"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a0f0ec882be49dc637142683858386c">filter</a> (float raw)=0</td></tr>
+<tr class="memdesc:a0a0f0ec882be49dc637142683858386c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_filter.html" title="Pure virtual class for different types of data filters.">Filter</a> the data.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a8728af6ca606f05f97079d2dd8f29d2c" id="r_a8728af6ca606f05f97079d2dd8f29d2c"><td class="memItemLeft" align="right" valign="top"><a id="a8728af6ca606f05f97079d2dd8f29d2c" name="a8728af6ca606f05f97079d2dd8f29d2c"></a>
-<a class="el" href="structring__buffer.html">ring_buffer</a>&lt; 128 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>buffer_raw</b></td></tr>
-<tr class="memitem:a1564e61c2bd91ba2bc5a58848fbfe485" id="r_a1564e61c2bd91ba2bc5a58848fbfe485"><td class="memItemLeft" align="right" valign="top"><a id="a1564e61c2bd91ba2bc5a58848fbfe485" name="a1564e61c2bd91ba2bc5a58848fbfe485"></a>
-<a class="el" href="structring__buffer.html">ring_buffer</a>&lt; 128 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>buffer_filtered</b></td></tr>
+<tr class="memitem:a7b888b4e63e8ee37c6597d4b6ce8ffde" id="r_a7b888b4e63e8ee37c6597d4b6ce8ffde"><td class="memItemLeft" align="right" valign="top"><a id="a7b888b4e63e8ee37c6597d4b6ce8ffde" name="a7b888b4e63e8ee37c6597d4b6ce8ffde"></a>
+<a class="el" href="structring__buffer.html">ring_buffer</a>&lt; float, 128 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>buffer_raw</b></td></tr>
+<tr class="memitem:add24a2db76989b142d63920389094a66" id="r_add24a2db76989b142d63920389094a66"><td class="memItemLeft" align="right" valign="top"><a id="add24a2db76989b142d63920389094a66" name="add24a2db76989b142d63920389094a66"></a>
+<a class="el" href="structring__buffer.html">ring_buffer</a>&lt; float, 128 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>buffer_filtered</b></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Pure virtual class for different types of data filters. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="af3e525d6750569debcaba929bb233cb7" name="af3e525d6750569debcaba929bb233cb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3e525d6750569debcaba929bb233cb7">&#9670;&#160;</a></span>filter()</h2>
+<a id="a0a0f0ec882be49dc637142683858386c" name="a0a0f0ec882be49dc637142683858386c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a0f0ec882be49dc637142683858386c">&#9670;&#160;</a></span>filter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -151,7 +151,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -165,7 +165,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The filtered data. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="class_high_pass.html#afffd8833c60e406f13593affcc098f3c">HighPass</a>.</p>
+<p>Implemented in <a class="el" href="class_high_pass.html#afffd8833c60e406f13593affcc098f3c">HighPass</a>.</p>
 
 </div>
 </div>
