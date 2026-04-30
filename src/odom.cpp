@@ -66,8 +66,9 @@ void Odom2WheelIMU::calc_pos(void) {
                 float rot_dx = dx_wheel_cm * cos_t - dy_wheel_cm * sin_t;
                 float rot_dy = dx_wheel_cm * sin_t - dy_wheel_cm * cos_t;
 
-                // add to last known position
-                // TODO:
+                // add to global position
+                position_global_x_cm += rot_dx;
+                position_global_y_cm += rot_dy;
 
                 pros::delay(10);
         } while (true);
